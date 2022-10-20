@@ -157,9 +157,12 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-	-webkit-box-shadow: 0px 6px 16px rgba(22, 25, 102, 0.08),
+	-webkit-box-shadow:
+		0px 6px 16px rgba(22, 25, 102, 0.08),
 		0 0 0px 1000px #fff inset !important;
-	box-shadow: 0px 6px 16px rgba(22, 25, 102, 0.08), 0 0 0px 1000px #fff inset !important;
+	box-shadow:
+		0px 6px 16px rgba(22, 25, 102, 0.08),
+		0 0 0px 1000px #fff inset !important;
 	background-color: #fff !important;
 }
 
