@@ -1,0 +1,100 @@
+@import "assets/scss/vars.scss";
+
+.guarantee_privacy {
+	padding: 30px 0 90px;
+
+	@media (max-width: 991.98px) {
+		padding: 60px 0 30px;
+	}
+
+	.guarantee_img {
+		display: block;
+		width: 100%;
+	}
+
+	h2 {
+		font-size: 28px;
+		font-weight: 700;
+		color: $mainDarkColor;
+		line-height: 30px;
+		text-transform: capitalize;
+		margin-bottom: 25px;
+	}
+
+	p {
+		font-size: 24px;
+		font-weight: 400;
+		color: $bodyTextColor;
+		letter-spacing: 2px;
+		margin-bottom: 20px;
+	}
+
+	.coins_img {
+		display: block;
+		width: 100%;
+		max-width: 138px;
+		margin-inline-start: auto;
+		margin-bottom: 3px;
+	}
+
+	.cards_holder {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 24px;
+
+		@media (max-width: 991.98px) {
+			justify-content: center;
+		}
+
+		@media (max-width: 575.98px) {
+			flex-wrap: wrap;
+		}
+
+		.cardBox {
+			flex-shrink: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 14px;
+			background-color: $whiteColor;
+			box-shadow: 0px 6px 16px rgba(22, 25, 102, 0.08);
+			border-radius: 10px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			-ms-border-radius: 10px;
+			-o-border-radius: 10px;
+			padding: 20px;
+			min-width: 173px;
+
+			.icon {
+				height: 70px;
+				display: flex;
+				margin-bottom: 8px;
+
+				img {
+					height: 100%;
+				}
+			}
+
+			.count {
+				font-size: 20px;
+				font-weight: 500;
+				color: $mainColor;
+			}
+		}
+	}
+
+	:global {
+		.row {
+			& > [class*="col-"] {
+				&:last-child {
+					@media (max-width: 991.98px) {
+						order: -1;
+					}
+				}
+			}
+		}
+	}
+}

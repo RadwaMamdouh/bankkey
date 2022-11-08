@@ -1,0 +1,39 @@
+@import "assets/scss/vars.scss";
+
+.gray_btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 12px 33px;
+	background-color: $SecondaryLightGrayColor;
+	box-shadow: none;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	color: $mainDarkColor !important;
+	border: 1px solid $SecondaryGrayColor;
+	white-space: nowrap;
+	gap: 15px;
+
+	:global {
+		.p-button-label {
+			font-size: 16px;
+			font-weight: 600;
+			color: $mainDarkColor;
+			white-space: nowrap;
+			flex-grow: unset;
+		}
+	}
+
+	&:hover,
+	&:enabled:hover {
+		background-color: $SecondaryLightGrayColor;
+		box-shadow: 0px 6px 16px rgba(22, 25, 102, 0.26);
+		border-color: $SecondaryGrayColor;
+	}
+}

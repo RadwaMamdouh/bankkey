@@ -1,0 +1,73 @@
+@import "assets/scss/vars.scss";
+
+.check_box {
+	&:not(:last-child) {
+		margin-bottom: 12px;
+	}
+
+	:global {
+		.field-checkbox {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 8px;
+
+			label {
+				font-size: 12px;
+				font-weight: 400;
+				color: #101223;
+			}
+
+			.p-checkbox {
+				width: 12px;
+				height: 12px;
+
+				&-box {
+					width: 12px;
+					height: 12px;
+					background-color: $whiteColor;
+					border: 1px solid #b3b3b3;
+					border-radius: 3px;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					-ms-border-radius: 3px;
+					-o-border-radius: 3px;
+					padding: 3px;
+
+					.p-checkbox-icon {
+						font-size: 6px;
+						font-weight: 600;
+						line-height: normal;
+					}
+
+					&.p-focus {
+						box-shadow: 0 0 0 0.2rem rgba($SecondaryGrayColor, 0.2);
+						border-color: #b3b3b3;
+					}
+
+					&.p-highlight {
+						background-color: $mainColor;
+						border-color: $mainColor;
+
+						&.p-focus {
+							box-shadow: 0 0 0 0.2rem rgba($mainColor, 0.2);
+							border-color: $mainColor;
+						}
+
+						&:hover {
+							border-color: $mainColor;
+							background: $mainColor;
+						}
+					}
+				}
+
+				&-checked {
+					& + label {
+						font-weight: 700;
+						color: $mainColor;
+					}
+				}
+			}
+		}
+	}
+}

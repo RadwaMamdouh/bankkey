@@ -1,0 +1,125 @@
+@import "assets/scss/vars.scss";
+
+.purchase_table {
+	:global {
+		.p-datatable {
+			margin-bottom: 24px;
+
+			&-wrapper {
+				&::-webkit-scrollbar {
+					width: 0.2em;
+					height: 0.2em;
+				}
+			}
+
+			&-table {
+				border-collapse: separate;
+				border-spacing: 0 8px;
+
+				.p-datatable-thead {
+					tr {
+						th {
+							background-color: transparent;
+							border: 0;
+
+							.p-column-header-content {
+								.p-column-title {
+									font-size: 14px;
+									font-weight: 700;
+									color: $blackColor;
+								}
+							}
+						}
+					}
+				}
+
+				.p-datatable-tbody {
+					tr {
+						td {
+							font-size: 14px;
+							font-weight: 400;
+							color: $blackColor;
+							border-top: 1px solid $SecondaryLightGrayColor;
+							border-bottom: 1px solid $SecondaryLightGrayColor;
+
+							&:first-child {
+								border-inline-start: 1px solid $SecondaryLightGrayColor;
+								#{$ltr} & {
+									border-top-left-radius: 8px;
+									border-bottom-left-radius: 8px;
+								}
+								#{$rtl} & {
+									border-top-right-radius: 8px;
+									border-bottom-right-radius: 8px;
+								}
+							}
+
+							&:last-child {
+								border-inline-end: 1px solid $SecondaryLightGrayColor;
+								#{$ltr} & {
+									border-top-right-radius: 8px;
+									border-bottom-right-radius: 8px;
+								}
+								#{$rtl} & {
+									border-top-left-radius: 8px;
+									border-bottom-left-radius: 8px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.action_btns {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 6px;
+		flex-wrap: wrap;
+
+		.invoice_btn {
+			flex-shrink: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 24px;
+			height: 24px;
+			background-color: $mainColor;
+			color: $whiteColor;
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			-ms-border-radius: 4px;
+			-o-border-radius: 4px;
+			font-size: 0;
+			padding: 4px;
+			border: 0;
+
+			img {
+				max-width: 100%;
+			}
+		}
+
+		.pay_now {
+			flex-shrink: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 4px 24px;
+			background: rgba($mainColor, 0.1);
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			-ms-border-radius: 4px;
+			-o-border-radius: 4px;
+			color: $mainColor;
+			border: 0;
+			font-size: 12px;
+			font-weight: 700;
+			text-align: center;
+			min-height: 24px;
+		}
+	}
+}

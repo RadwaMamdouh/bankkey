@@ -1,0 +1,119 @@
+@import "assets/scss/vars.scss";
+
+.news_letter {
+	background: linear-gradient(
+		169.4deg,
+		#ffffff0d -6.01%,
+		#03cffc0d 36.87%,
+		#b977ff0d 78.04%,
+		#6508c90d 103.77%
+	);
+
+	&_content {
+		padding: 93px 0 187px;
+		position: relative;
+
+		@media (max-width: 991.98px) {
+			padding: 60px 0;
+		}
+
+		.ellipses1 {
+			position: absolute;
+			right: 0;
+			top: 38px;
+			width: 28px;
+		}
+
+		.ellipses2 {
+			position: absolute;
+			left: 0;
+			top: 40%;
+			width: 41px;
+		}
+
+		h2 {
+			font-size: 44px;
+			font-weight: 700;
+			color: $mainDarkColor;
+			text-transform: capitalize;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 16px;
+			font-weight: 400;
+			color: $bodyTextColor;
+			text-align: center;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+		}
+
+		.subscribe_holder {
+			width: 50%;
+			max-width: 90%;
+			margin: 0 auto;
+
+			@media (max-width: 991.98px) {
+				width: 70%;
+			}
+
+			@media (max-width: 575.98px) {
+				width: 100%;
+				max-width: 100%;
+			}
+
+			.subscribe_form {
+				background-color: $whiteColor;
+				box-shadow: 0px 6px 16px rgba(22, 25, 102, 0.08);
+				border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				-ms-border-radius: 10px;
+				-o-border-radius: 10px;
+				padding: 6px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 5px;
+
+				.inputs_wrapper {
+					margin-bottom: 0;
+					width: 100%;
+				}
+
+				:global {
+					[class*="field_holder"] {
+						.p-inputtext {
+							box-shadow: none;
+							padding: 14px 12px;
+							background-color: transparent;
+						}
+					}
+				}
+
+				.subscribe_btn {
+					flex-shrink: 0;
+					padding: 14px 20px;
+					background-color: $mainColor;
+					color: $whiteColor;
+					font-size: 16px;
+					font-weight: 400;
+					border: 1px solid transparent;
+					box-shadow: none;
+					transition: 0.3s;
+					-webkit-transition: 0.3s;
+					-moz-transition: 0.3s;
+					-ms-transition: 0.3s;
+					-o-transition: 0.3s;
+
+					&:hover {
+						background-color: $whiteColor;
+						color: $mainColor;
+						border-color: $mainColor;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+@import "assets/scss/vars.scss";
+
+.document_box {
+	&:not(:last-child) {
+		padding-bottom: 18px;
+		margin-bottom: 16px;
+		border-bottom: 1px solid $SecondaryLightGrayColor;
+	}
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 12px;
+
+	.doc_img {
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid $SecondaryLightGrayColor;
+		border-radius: 8px;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		-ms-border-radius: 8px;
+		-o-border-radius: 8px;
+		width: 122px;
+		height: 87px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.doc_info {
+		width: 100%;
+
+		.doc_name {
+			font-size: 16px;
+			font-weight: 600;
+			color: $textDarkColor;
+			margin-bottom: 8px;
+		}
+
+		.size_status {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 10px;
+			margin-bottom: 11px;
+
+			.size {
+				font-size: 12px;
+				font-weight: 700;
+				color: $textDarkColor;
+			}
+		}
+
+		.doc_btns {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 4px;
+
+			.doc_btn {
+				flex-shrink: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: rgba($mainColor, 0.1);
+				border-radius: 4px;
+				-webkit-border-radius: 4px;
+				-moz-border-radius: 4px;
+				-ms-border-radius: 4px;
+				-o-border-radius: 4px;
+				color: $mainColor;
+				padding: 0;
+				border: 1px solid transparent;
+				transition: 0.3s;
+				-webkit-transition: 0.3s;
+				-moz-transition: 0.3s;
+				-ms-transition: 0.3s;
+				-o-transition: 0.3s;
+
+				img {
+					max-width: 100%;
+				}
+
+				&:hover {
+					border-color: $mainColor;
+				}
+			}
+		}
+	}
+}

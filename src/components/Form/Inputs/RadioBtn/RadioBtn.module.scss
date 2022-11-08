@@ -1,0 +1,67 @@
+@import "assets/scss/vars.scss";
+
+.radio_btn {
+	:global(.field-radiobutton) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+		padding: 10px 15px;
+
+		.inputLbl {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 8px;
+
+			:global {
+				.p-radiobutton {
+					width: 18px;
+					height: 18px;
+
+					&-focused {
+						box-shadow: none;
+					}
+
+					&-box {
+						border: 1px solid $SecondaryLightGrayColor;
+						width: 18px;
+						height: 18px;
+
+						&.p-highlight {
+							border: 4px solid $SecondaryLightGrayColor;
+							background-color: $whiteColor;
+
+							&.p-focus {
+								box-shadow: none;
+							}
+
+							.p-radiobutton-icon {
+								background-color: $mainColor;
+								flex-shrink: 0;
+							}
+						}
+					}
+				}
+			}
+
+			.lbl {
+				font-size: 14px;
+				font-weight: 600;
+				color: $lighDarkColor;
+			}
+		}
+
+		.inputIcon {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 15px;
+			font-size: 0;
+
+			img {
+				flex-shrink: 0;
+			}
+		}
+	}
+}

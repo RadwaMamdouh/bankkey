@@ -1,0 +1,103 @@
+@import "assets/scss/vars.scss";
+
+.profile_intro {
+	padding: 24px;
+	background-color: $whiteColor;
+	border: 1px solid $SecondaryLightGrayColor;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 24px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 21px;
+
+	@media (max-width: 767.98px) {
+		flex-direction: column;
+	}
+
+	.profile_img {
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 174px;
+		height: 192px;
+		overflow: hidden;
+		border-radius: 6px;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		-ms-border-radius: 6px;
+		-o-border-radius: 6px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.profile_data {
+		width: 100%;
+
+		.top_sec {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 10px;
+			margin-bottom: 24px;
+
+			.info {
+				width: 100%;
+
+				&_box {
+					.tit {
+						font-size: 16px;
+						font-weight: 400;
+						color: $textDarkColor;
+						margin-bottom: 14px;
+					}
+
+					.val {
+						font-size: 16px;
+						font-weight: 700;
+						color: $textDarkColor;
+						word-break: break-word;
+					}
+				}
+			}
+
+			[class*="dark_btn"] {
+				flex-shrink: 0;
+				padding: 12px;
+				border-color: $mainDarkColor !important;
+				color: $mainDarkColor !important;
+
+				@media (max-width: 991px) {
+					position: absolute;
+					top: 24px;
+					#{$ltr} & {
+						right: 24px;
+					}
+					#{$rtl} & {
+						left: 24px;
+					}
+				}
+			}
+		}
+
+		.credit_updates {
+			&_tit {
+				font-size: 16px;
+				font-weight: 400;
+				color: $textDarkColor;
+				margin-bottom: 8px;
+			}
+		}
+	}
+}

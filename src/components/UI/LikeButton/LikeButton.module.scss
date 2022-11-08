@@ -1,0 +1,30 @@
+@import "assets/scss/vars.scss";
+
+.iconBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 12px 24px;
+	background: rgba($mainColor, 0.1);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	font-size: 0;
+	border-color: rgba($mainColor, 0.1);
+	width: 38px;
+	min-height: 38px;
+	color: $mainColor;
+
+	&:hover {
+		background: rgba($mainColor, 0.1) !important;
+		box-shadow: 0px 0px 4px rgba($mainColor, 0.26) !important;
+		border-color: rgba($mainColor, 0.1) !important;
+	}
+
+	img {
+		max-width: 24px;
+	}
+}

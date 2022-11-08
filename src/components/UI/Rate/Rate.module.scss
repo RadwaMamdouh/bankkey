@@ -1,0 +1,42 @@
+@import "assets/scss/vars.scss";
+
+.rate_holder {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 16px;
+
+	.rate_value {
+		font-size: 16px;
+		font-weight: 500;
+		color: $textDarkColor;
+	}
+
+	:global {
+		.p-rating {
+			gap: 0.32rem !important;
+			direction: ltr;
+
+			&-item {
+				.p-rating-icon {
+					color: #ffaf50 !important;
+					font-size: 1.3rem !important;
+				}
+
+				&-active {
+					.p-rating-icon {
+						color: #ffaf50 !important;
+					}
+
+					&:focus {
+						box-shadow: none !important;
+					}
+				}
+
+				&:focus {
+					box-shadow: none !important;
+				}
+			}
+		}
+	}
+}

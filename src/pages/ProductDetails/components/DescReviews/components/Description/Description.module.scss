@@ -1,0 +1,44 @@
+@import "assets/scss/vars.scss";
+
+.desc_Holder {
+	.desc_content {
+		font-size: 18px;
+		font-weight: 500;
+		color: #191919;
+		margin-bottom: 10px;
+		height: auto;
+		max-height: 182px;
+		overflow: hidden;
+		transition: 0.1s ease-in-out;
+		-webkit-transition: 0.1s ease-in-out;
+		-moz-transition: 0.1s ease-in-out;
+		-ms-transition: 0.1s ease-in-out;
+		-o-transition: 0.1s ease-in-out;
+		p {
+			margin-bottom: 20px;
+		}
+
+		ul {
+			list-style-type: disc;
+			padding-inline-start: 20px;
+			margin-bottom: 20px;
+		}
+
+		&.autoHeight {
+			max-height: 1500px;
+		}
+	}
+
+	.see_more {
+		&,
+		&:hover {
+			padding: 0;
+			background-color: transparent;
+			font-size: 16px;
+			font-weight: 500;
+			color: $mainColor;
+			border: 0;
+			text-decoration: underline;
+		}
+	}
+}
