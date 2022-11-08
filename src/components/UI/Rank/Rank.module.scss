@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "assets/scss/vars.scss";
 
 .rate {
@@ -18,3 +19,25 @@
 		max-width: 24px;
 	}
 }
+=======
+@import "assets/scss/vars.scss";
+
+.rate {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 4px;
+
+	span {
+		font-size: 14px;
+		font-weight: 700;
+		color: #8392a5;
+	}
+
+	img {
+		flex-shrink: 0;
+		width: 100%;
+		max-width: 24px;
+	}
+}
+>>>>>>> bank key pages

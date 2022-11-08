@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "assets/scss/vars.scss";
 
 .my_purchase {
@@ -20,3 +21,27 @@
 		margin-bottom: 17px;
 	}
 }
+=======
+@import "assets/scss/vars.scss";
+
+.my_purchase {
+	background-color: $whiteColor;
+	border: 1px solid #f1f5fd;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	padding: 24px;
+	overflow: hidden;
+	height: 100%;
+
+	h2 {
+		font-size: 18px;
+		font-weight: 700;
+		color: $textColor;
+		text-transform: capitalize;
+		margin-bottom: 17px;
+	}
+}
+>>>>>>> bank key pages

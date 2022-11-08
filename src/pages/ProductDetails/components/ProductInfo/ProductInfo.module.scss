@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "assets/scss/vars.scss";
 
 .product_info {
@@ -170,3 +171,177 @@
 		gap: 12px;
 	}
 }
+=======
+@import "assets/scss/vars.scss";
+
+.product_info {
+	&_row {
+		&:not(:last-child) {
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			border-bottom: 1px solid #f0f0f0;
+		}
+	}
+
+	.model_rate {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 5px;
+		margin-bottom: 14px;
+
+		.model {
+			font-size: 16px;
+			font-weight: 600;
+			color: #191919;
+		}
+	}
+
+	.availability {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 7px;
+		margin-bottom: 15px;
+
+		&_txt {
+			font-size: 16px;
+			font-weight: 600;
+			color: #191919;
+		}
+
+		&_val {
+			padding: 4px 12px;
+			background: rgba($mainColor, 0.1);
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			-ms-border-radius: 4px;
+			-o-border-radius: 4px;
+			font-size: 14px;
+			font-weight: 700;
+			color: $mainColor;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: -moz-fit-content;
+			width: fit-content;
+		}
+	}
+
+	h2 {
+		font-size: 20px;
+		font-weight: 700;
+		color: #191919;
+		margin-bottom: 22px;
+		line-height: 38px;
+	}
+
+	.details_list {
+		li {
+			&:not(:last-child) {
+				margin-bottom: 17px;
+			}
+
+			font-size: 14px;
+			font-weight: 300;
+			color: #191919;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 13px;
+
+			&::before {
+				content: "";
+				position: relative;
+				display: flex;
+				flex-shrink: 0;
+				width: 8px;
+				height: 8px;
+				border-radius: 100%;
+				-webkit-border-radius: 100%;
+				-moz-border-radius: 100%;
+				-ms-border-radius: 100%;
+				-o-border-radius: 100%;
+				background-color: $mainColor;
+			}
+		}
+	}
+
+	.sec_tit {
+		font-size: 16px;
+		font-weight: 600;
+		color: #191919;
+		margin-bottom: 16px;
+		text-transform: capitalize;
+	}
+
+	.sizes {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 8px;
+		flex-wrap: wrap;
+	}
+
+	.price_installment {
+		margin-bottom: 20px;
+
+		&_box {
+			.tit {
+				font-size: 16px;
+				font-weight: 400;
+				color: #191919;
+				margin-bottom: 13px;
+				text-transform: capitalize;
+			}
+
+			.price_holder {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 5px;
+
+				.price {
+					font-size: 28px;
+					font-weight: 700;
+					color: $mainColor;
+				}
+
+				.afterDiscount {
+					font-size: 18px;
+					font-weight: 400;
+					color: #d9d9d9;
+					text-decoration: line-through;
+				}
+			}
+		}
+	}
+
+	.installments {
+		margin-bottom: 15px;
+
+		&_tit {
+			font-size: 16px;
+			font-weight: 600;
+			color: #191919;
+			margin-bottom: 12px;
+		}
+
+		&_boxes {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 8px;
+			flex-wrap: wrap;
+		}
+	}
+
+	.btns_holder {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 12px;
+	}
+}
+>>>>>>> bank key pages

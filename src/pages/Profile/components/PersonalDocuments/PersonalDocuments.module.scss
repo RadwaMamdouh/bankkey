@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "assets/scss/vars.scss";
 
 .personal_documents {
@@ -43,3 +44,50 @@
 		overflow: hidden;
 	}
 }
+=======
+@import "assets/scss/vars.scss";
+
+.personal_documents {
+	background-color: $whiteColor;
+	border: 1px solid #f1f5fd;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	overflow: hidden;
+	height: 100%;
+	padding: 24px;
+
+	h2 {
+		font-size: 18px;
+		font-weight: 700;
+		color: $textColor;
+		text-transform: capitalize;
+		margin-bottom: 24px;
+	}
+
+	.documents {
+		margin-bottom: 25px;
+	}
+
+	.other_files {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 49px;
+		background: $SecondaryLightGrayColor;
+		border-radius: 8px;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		-ms-border-radius: 8px;
+		-o-border-radius: 8px;
+		font-size: 16px;
+		font-weight: 500;
+		color: $blackColor;
+		text-align: center;
+		letter-spacing: -0.0257895em;
+		overflow: hidden;
+	}
+}
+>>>>>>> bank key pages

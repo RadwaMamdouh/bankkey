@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "assets/scss/vars.scss";
 
 .filter_holder {
@@ -69,3 +70,54 @@
 		}
 	}
 }
+=======
+@import "assets/scss/vars.scss";
+
+.filter_holder {
+	padding: 24px 16px;
+	background: $whiteColor;
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	height: 100%;
+
+	.head {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 8px;
+		margin-bottom: 25px;
+
+		h2 {
+			font-size: 18px;
+			font-weight: 700;
+			color: #101223;
+			margin-bottom: 0;
+		}
+
+		img {
+			flex-shrink: 0;
+			width: 100%;
+			max-width: 24px;
+		}
+	}
+
+	.filter_body {
+		.filter_box {
+			padding-bottom: 24px;
+			margin-bottom: 24px;
+			border-bottom: 1px solid #eee;
+
+			.search_keys {
+				margin-top: 12px;
+				display: flex;
+				gap: 9px 8px;
+				flex-wrap: wrap;
+			}
+		}
+	}
+}
+>>>>>>> bank key pages

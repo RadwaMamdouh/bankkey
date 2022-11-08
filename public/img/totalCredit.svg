@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="32" height="32" rx="16" fill="#1FCC79" fill-opacity="0.1"/>
 <g clip-path="url(#clip0_333_18621)">
@@ -9,3 +10,16 @@
 </clipPath>
 </defs>
 </svg>
+=======
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="#1FCC79" fill-opacity="0.1"/>
+<g clip-path="url(#clip0_333_18621)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6 16C6 17.9778 6.58649 19.9112 7.6853 21.5557C8.78412 23.2002 10.3459 24.4819 12.1732 25.2388C14.0004 25.9956 16.0111 26.1937 17.9509 25.8079C19.8907 25.422 21.6726 24.4696 23.0711 23.071C24.4696 21.6725 25.422 19.8907 25.8078 17.9509C26.1937 16.0111 25.9957 14.0005 25.2388 12.1732C24.4819 10.346 23.2002 8.78412 21.5557 7.6853C19.9112 6.58649 17.9778 6 16 6C13.3478 6 10.8043 7.05359 8.92892 8.92896C7.05356 10.8043 6 13.3478 6 16V16ZM22.073 12.929L15 20L10.757 15.757L12.171 14.343L15 17.172L20.656 11.515L22.07 12.929H22.073Z" fill="#1FCC79"/>
+</g>
+<defs>
+<clipPath id="clip0_333_18621">
+<rect width="24" height="24" fill="white" transform="translate(4 4)"/>
+</clipPath>
+</defs>
+</svg>
+>>>>>>> bank key pages
