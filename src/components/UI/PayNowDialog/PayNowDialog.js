@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Button } from "primereact/button";
 
 // COMPONENTS
 import DialogBox from "components/UI/DialogBox/DialogBox";
+import ApplyCoupon from "../ApplyCoupon/ApplyCoupon";
 import { RadioBtn, TextInput } from "components/Form/Inputs";
 import FawryPaymentDialog from "../FawryPaymentDialog/FawryPaymentDialog";
 
@@ -35,7 +35,7 @@ const PayNowDialog = ({ ...props }) => {
 			>
 				<div className={styles.installment_payNow}>
 					<div className="row">
-						<div className="col-md-6">
+						<div className="col-xl-6 mb-4 mb-xl-0">
 							<div className={styles.purchase_details}>
 								<h3>Purchase Details</h3>
 								<div className={styles.purchase_item}>
@@ -47,14 +47,14 @@ const PayNowDialog = ({ ...props }) => {
 										<div className={styles.qty}>QTY :1</div>
 									</div>
 								</div>
-								<Button label="Apply Coupon" className={styles.apply_coupon} />
+								<ApplyCoupon />
 								<div className={styles.total}>
 									<div className={styles.total_label}>Total</div>
 									<div className={styles.total_val}>600.72EGP</div>
 								</div>
 							</div>
 						</div>
-						<div className="col-md-6">
+						<div className="col-xl-6">
 							<div className={styles.payment}>
 								<h3>Payment</h3>
 								<div className={styles.payment_choices}>
@@ -94,7 +94,7 @@ const PayNowDialog = ({ ...props }) => {
 															placeHolder="Enter Card number"
 														/>
 													</div>
-													<div className="col-md-6">
+													<div className="col-md-6 mb-4 mb-md-0">
 														<TextInput inputName="date" placeHolder="MM / YY" />
 													</div>
 													<div className="col-md-6">

@@ -20,11 +20,13 @@ const DialogBox = ({
 			visible={displayDialog}
 			style={{ width: "50vw" }}
 			footer={
-				<DialogBtns
-					btnLbl={props.buttonLbl}
-					closeDialog={hideModal}
-					btnClicked={props.btnClicked}
-				/>
+				!props.hideBtns && (
+					<DialogBtns
+						btnLbl={props.buttonLbl}
+						closeDialog={hideModal}
+						btnClicked={props.btnClicked}
+					/>
+				)
 			}
 			onHide={hideModal}
 		>

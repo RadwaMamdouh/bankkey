@@ -120,6 +120,11 @@
 			font-weight: 700;
 			text-align: center;
 			min-height: 24px;
+
+			@media (max-width: 575.98px) {
+				padding: 4px;
+				font-size: 10px;
+			}
 		}
 	}
 }

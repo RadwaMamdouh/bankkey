@@ -6,10 +6,11 @@ import { Button } from "primereact/button";
 // COMPONENTS
 import Status from "components/UI/Status/Status";
 import Pagination from "components/UI/Pagination/Pagination";
+import PayNowDialog from "components/UI/PayNowDialog/PayNowDialog";
+import ViewReceiptDialog from "components/UI/ViewReceiptDialog/ViewReceiptDialog";
 
 // STYLES
 import styles from "./PurchaseTable.module.scss";
-import PayNowDialog from "components/UI/PayNowDialog/PayNowDialog";
 
 const PurchaseTable = () => {
 	// Purchase Table Data
@@ -74,7 +75,10 @@ const PurchaseTable = () => {
 	const actionTemplate = (rowData) => {
 		return (
 			<div className={styles.action_btns}>
-				<Button className={styles.invoice_btn}>
+				<Button
+					className={styles.invoice_btn}
+					onClick={() => setDisplayReceiptDialog(true)}
+				>
 					<img src="/img/invoice.svg" alt="" />
 				</Button>
 				<Button
@@ -88,6 +92,9 @@ const PurchaseTable = () => {
 
 	// Show Pay Now Dialog
 	const [displayDialog, setDisplayDialog] = useState(false);
+
+	// Show View Receipt Dialog
+	const [displayReceiptDialog, setDisplayReceiptDialog] = useState(false);
 
 	return (
 		<>
@@ -106,6 +113,12 @@ const PurchaseTable = () => {
 			<PayNowDialog
 				showModal={displayDialog}
 				hideModal={() => setDisplayDialog(false)}
+			/>
+
+			{/* View Receipt Dialog */}
+			<ViewReceiptDialog
+				showModal={displayReceiptDialog}
+				hideModal={() => setDisplayReceiptDialog(false)}
 			/>
 		</>
 	);
