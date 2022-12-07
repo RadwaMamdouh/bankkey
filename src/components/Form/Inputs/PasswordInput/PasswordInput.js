@@ -11,6 +11,7 @@ export function PasswordInput({ ...props }) {
 				<Password
 					name={props.inputName}
 					value={props.inputVal}
+					placeholder={props.placeHolder}
 					onChange={props.changeHandler}
 					toggleMask
 					className="w-100"
