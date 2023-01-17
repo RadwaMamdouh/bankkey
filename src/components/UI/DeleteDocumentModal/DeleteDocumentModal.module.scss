@@ -1,0 +1,28 @@
+@import "assets/scss/vars.scss";
+
+.delete_document_modal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.delete_icon {
+		flex-shrink: 0;
+		width: 75px;
+		margin-bottom: 28px;
+	}
+
+	h5 {
+		font-size: 16px;
+		font-weight: 600;
+		color: $bodyTextColor;
+		margin-bottom: 5px;
+	}
+
+	p {
+		font-size: 13px;
+		font-weight: 400;
+		color: $textLightDarkColor;
+		margin-bottom: 0;
+	}
+}

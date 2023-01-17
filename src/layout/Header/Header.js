@@ -4,7 +4,7 @@ import { Button } from "primereact/button";
 import { Menu } from "primereact/menu";
 
 // Utils
-import { LOGO } from "utils/constants/Logo";
+import { LOGO } from "utils/constants/Images";
 
 // COMPONENTS
 import GrayButton from "components/UI/GrayButton/GrayButton";

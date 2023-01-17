@@ -2,7 +2,7 @@ import { useFormik } from "formik";
 import { Link } from "react-router-dom";
 
 // Utils
-import { LOGO } from "utils/constants/Logo";
+import { LOGO, recoveryPassword, phone } from "utils/constants/Images";
 
 // COMPONENTS
 import { TextInput } from "components/Form/Inputs";
@@ -49,11 +49,7 @@ const RecoveryPassword = () => {
 			<div className="row">
 				<div className="col-lg-6">
 					<div className={styles.log_left}>
-						<img
-							src="/img/recovery-password.png"
-							alt=""
-							className={styles.log_img}
-						/>
+						<img src={recoveryPassword} alt="" className={styles.log_img} />
 						<h2>Receive payments from any banking system</h2>
 						<p>
 							Connect your bank card, and create accounts in the selected
@@ -66,7 +62,7 @@ const RecoveryPassword = () => {
 						<img src="/img/bell.svg" alt="" className={styles.emoji} />
 						<div className={styles.log_form_head}>
 							<h1>Second Step Verification </h1>
-							<img src="/img/phone.svg" alt="" className={styles.phone_icon} />
+							<img src={phone} alt="" className={styles.phone_icon} />
 							<div className={styles.verification_code}>
 								<h5>Enter the verification code we sent to</h5>
 								<p>+38076767677</p>

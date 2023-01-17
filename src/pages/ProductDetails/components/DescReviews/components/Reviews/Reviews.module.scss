@@ -28,7 +28,7 @@
 
 		.total_rate {
 			padding: 26px 23px;
-			background: rgba($mainColor, 0.1);
+			background-color: $midGrayColor;
 			border-radius: 8px;
 			-webkit-border-radius: 8px;
 			-moz-border-radius: 8px;
@@ -129,7 +129,7 @@
 			}
 
 			&_form {
-				border: 1px solid rgba($mainColor, 0.1);
+				border: 1px solid $yellowColor;
 				border-radius: 8px;
 				-webkit-border-radius: 8px;
 				-moz-border-radius: 8px;

@@ -1,3 +1,6 @@
+// Utils
+import { shopping, discounts, settlements } from "utils/constants/Images";
+
 // STYLES
 import styles from "./OurSolutions.module.scss";
 
@@ -9,11 +12,6 @@ const OurSolutions = () => {
 				alt=""
 				className={styles.ellipses1}
 			/>
-			<img
-				src="/img/solution-ellipses2.svg"
-				alt=""
-				className={styles.ellipses2}
-			/>
 			<div className="container">
 				<h2>Our Solutions</h2>
 				<div className={styles.solution_cards}>
@@ -21,7 +19,7 @@ const OurSolutions = () => {
 						<div className="col-md-6 col-lg-6 col-xl-4 mb-5 mb-xl-0">
 							<div className={styles.solution_card}>
 								<div className={styles.img}>
-									<img src="/img/shopping.svg" alt="" />
+									<img src={shopping} alt="" />
 								</div>
 								<h5>Shopping from top merchants</h5>
 								<p>
@@ -33,7 +31,7 @@ const OurSolutions = () => {
 						<div className="col-md-6 col-lg-6 col-xl-4 mb-5 mb-xl-0">
 							<div className={styles.solution_card}>
 								<div className={styles.img}>
-									<img src="/img/discounts.svg" alt="" />
+									<img src={discounts} alt="" />
 								</div>
 								<h5>Discounts</h5>
 								<p>
@@ -45,7 +43,7 @@ const OurSolutions = () => {
 						<div className="col-md-6 col-lg-6 col-xl-4 mb-5 mb-xl-0">
 							<div className={styles.solution_card}>
 								<div className={styles.img}>
-									<img src="/img/settlements.svg" alt="" />
+									<img src={settlements} alt="" />
 								</div>
 								<h5>settlements</h5>
 								<p>

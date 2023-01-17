@@ -3,6 +3,9 @@ import { Button } from "primereact/button";
 // COMPONENTS
 import GradientButton from "components/UI/GradientButton/GradientButton";
 
+// Utils
+import { IntroImg } from "utils/constants/Images";
+
 // STYLES
 import styles from "./IntroSection.module.scss";
 
@@ -33,7 +36,7 @@ const IntroSection = () => {
 						/>
 					</div>
 					<div className="col-lg-6">
-						<img src="/img/intro-img.png" alt="" className={styles.intro_img} />
+						<img src={IntroImg} alt="" className={styles.intro_img} />
 					</div>
 				</div>
 			</div>

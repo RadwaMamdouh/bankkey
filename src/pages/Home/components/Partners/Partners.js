@@ -11,11 +11,6 @@ const Partners = () => {
 			/>
 			<div className="container">
 				<div className={styles.partners_content}>
-					<img
-						src="/img/partners-ellipses2.svg"
-						alt=""
-						className={styles.ellipses2}
-					/>
 					<h2>Partners</h2>
 					<h5>Powering payments for partners around the world</h5>
 					<p>

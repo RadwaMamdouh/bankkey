@@ -3,8 +3,8 @@ import { Link, useParams } from "react-router-dom";
 // COMPONENTS
 import Rank from "../Rank/Rank";
 import GradientButton from "../GradientButton/GradientButton";
-import LikeButton from "../LikeButton/LikeButton";
-import CartButton from "../CartButton/CartButton";
+// import LikeButton from "../LikeButton/LikeButton";
+// import CartButton from "../CartButton/CartButton";
 
 // STYLES
 import styles from "./ProductCard.module.scss";
@@ -39,10 +39,10 @@ const ProductCard = ({ product }) => {
 					<GradientButton btn label="Buy Now" />
 
 					{/* Like Btn */}
-					<LikeButton />
+					{/* <LikeButton /> */}
 
 					{/* Cart Btn */}
-					<CartButton />
+					{/* <CartButton /> */}
 				</div>
 			</div>
 		</div>

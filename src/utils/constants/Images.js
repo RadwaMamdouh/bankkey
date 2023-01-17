@@ -1,0 +1,16 @@
+export const LOGO = "/img/bankkey.svg";
+export const FooterLogo = "/img/bankkey-footer.svg";
+export const IntroImg = "/img/intro-image.png";
+export const users = "/img/users.svg";
+export const secure = "/img/secure.svg";
+export const fees = "/img/fees.svg";
+export const shopping = "/img/shopping.svg";
+export const discounts = "/img/discounts.svg";
+export const settlements = "/img/settlements.svg";
+export const login = "/img/login.png";
+export const signup = "/img/signup.png";
+export const forgetPassword = "/img/forget-password.png";
+export const phone = "/img/phone.svg";
+export const recoveryPassword = "/img/recovery-password.png";
+export const editYellow = "/img/edit-yellow.svg";
+export const deleteYellow = "/img/delete-yellow.svg";

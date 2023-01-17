@@ -1,6 +1,9 @@
 import { Button } from "primereact/button";
 import { Link } from "react-router-dom";
 
+// Utils
+import { FooterLogo } from "utils/constants/Images";
+
 // STYLES
 import styles from "./Footer.module.scss";
 
@@ -14,7 +17,7 @@ const Footer = () => {
 							<div className="col-md-6 col-xl-4 mb-5 mb-xl-0">
 								<div className={styles.footer_col}>
 									<div className={styles.footer_logo}>
-										<img src="/img/footer-logo.svg" alt="" />
+										<img src={FooterLogo} alt="" />
 									</div>
 									<p className={styles.app_desc}>
 										Social Payment For Eazypay and Payment Transfer

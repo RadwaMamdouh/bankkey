@@ -2,7 +2,7 @@ import { useFormik } from "formik";
 import { Link } from "react-router-dom";
 
 // Utils
-import { LOGO } from "utils/constants/Logo";
+import { LOGO, phone } from "utils/constants/Images";
 
 // COMPONENTS
 import { TextInput } from "components/Form/Inputs";
@@ -62,7 +62,7 @@ const Verification = () => {
 						<img src="/img/bell.svg" alt="" className={styles.emoji} />
 						<div className={styles.log_form_head}>
 							<h1>Second Step Verification </h1>
-							<img src="/img/phone.svg" alt="" className={styles.phone_icon} />
+							<img src={phone} alt="" className={styles.phone_icon} />
 							<div className={styles.verification_code}>
 								<h5>Enter the verification code we sent to</h5>
 								<p>+38076767677</p>

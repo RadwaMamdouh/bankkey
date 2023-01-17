@@ -9,6 +9,14 @@
 		#6508c90d 103.77%
 	);
 
+	background: linear-gradient(
+		169.4deg,
+		#c4a1400d -6.01%,
+		#19255b0d 36.87%,
+		#efe1c50d 78.04%,
+		#7578a10d 103.77%
+	);
+
 	&_content {
 		padding: 93px 0 187px;
 		position: relative;
@@ -27,8 +35,8 @@
 		.ellipses2 {
 			position: absolute;
 			left: 0;
-			top: 40%;
-			width: 41px;
+			bottom: 0;
+			width: 70px;
 		}
 
 		h2 {
@@ -106,6 +114,10 @@
 					-moz-transition: 0.3s;
 					-ms-transition: 0.3s;
 					-o-transition: 0.3s;
+
+					.p-button-label {
+						font-weight: 400;
+					}
 
 					&:hover {
 						background-color: $whiteColor;

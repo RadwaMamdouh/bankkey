@@ -2,8 +2,8 @@
 <ellipse cx="14.0782" cy="14.372" rx="14.0782" ry="14.372" fill="url(#paint0_linear_36_9294)"/>
 <defs>
 <linearGradient id="paint0_linear_36_9294" x1="3.12849" y1="2.5703" x2="25.1288" y2="27.2032" gradientUnits="userSpaceOnUse">
-<stop stop-color="#B9D4FD"/>
-<stop offset="1" stop-color="#186FF2"/>
+<stop stop-color="#AAABC9"/>
+<stop offset="1" stop-color="#19255B"/>
 </linearGradient>
 </defs>
 </svg>

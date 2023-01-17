@@ -6,7 +6,7 @@
 	justify-content: center;
 	width: 100%;
 	padding: 12px 24px;
-	background: linear-gradient(91.28deg, $mainColor 0%, $darkBlueColor 100%);
+	background-color: $mainColor;
 	box-shadow: 0px 6px 16px rgba(22, 25, 102, 0.08);
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
@@ -32,7 +32,7 @@
 
 	&:hover,
 	&:enabled:hover {
-		background: linear-gradient(91.28deg, $mainColor 0%, $darkBlueColor 100%);
+		background-color: $mainColor;
 		box-shadow: 0px 6px 16px rgba(22, 25, 102, 0.26);
 		border-color: #fff;
 	}

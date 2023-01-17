@@ -2,6 +2,7 @@
 
 .guarantee_privacy {
 	padding: 30px 0 90px;
+	position: relative;
 
 	@media (max-width: 991.98px) {
 		padding: 60px 0 30px;
@@ -10,6 +11,16 @@
 	.guarantee_img {
 		display: block;
 		width: 100%;
+	}
+
+	&_body {
+		position: relative;
+	}
+
+	.privacy_float {
+		position: absolute;
+		right: 0;
+		bottom: 0;
 	}
 
 	h2 {

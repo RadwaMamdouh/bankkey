@@ -2,8 +2,8 @@
 import Rank from "components/UI/Rank/Rank";
 import CustomRadioBtn from "components/Form/Inputs/CustomRadioBtn/CustomRadioBtn";
 import GradientButton from "components/UI/GradientButton/GradientButton";
-import LikeButton from "components/UI/LikeButton/LikeButton";
-import CartButton from "components/UI/CartButton/CartButton";
+// import LikeButton from "components/UI/LikeButton/LikeButton";
+// import CartButton from "components/UI/CartButton/CartButton";
 
 // STYLES
 import styles from "./ProductInfo.module.scss";
@@ -147,10 +147,10 @@ const ProductInfo = () => {
 					<GradientButton label="Buy Now" btn />
 
 					{/* Like Btn */}
-					<LikeButton />
+					{/* <LikeButton /> */}
 
 					{/* Cart Btn */}
-					<CartButton />
+					{/* <CartButton /> */}
 				</div>
 			</div>
 		</div>

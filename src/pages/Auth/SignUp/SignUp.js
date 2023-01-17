@@ -2,7 +2,7 @@ import { useFormik } from "formik";
 import { Link } from "react-router-dom";
 
 // Utils
-import { LOGO } from "utils/constants/Logo";
+import { LOGO, signup } from "utils/constants/Images";
 
 // COMPONENTS
 import { PasswordInput, TextInput } from "components/Form/Inputs";
@@ -70,7 +70,7 @@ const SignUp = () => {
 			<div className="row">
 				<div className="col-lg-6">
 					<div className={styles.log_left}>
-						<img src="/img/signup.png" alt="" className={styles.log_img} />
+						<img src={signup} alt="" className={styles.log_img} />
 						<h2>Receive payments from any banking system</h2>
 						<p>
 							Connect your bank card, and create accounts in the selected
