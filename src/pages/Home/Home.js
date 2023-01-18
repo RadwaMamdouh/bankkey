@@ -1,5 +1,7 @@
 // Child Components
 import IntroSection from "./components/IntroSection/IntroSection";
+import HomeBanner from "./components/HomeBanner/HomeBanner";
+import OffersSection from "./components/OffersSection/OffersSection";
 import GuaranteePrivacy from "./components/GuaranteePrivacy/GuaranteePrivacy";
 import HowItWork from "./components/HowItWork/HowItWork";
 import OurSolutions from "./components/OurSolutions/OurSolutions";
@@ -14,6 +16,8 @@ const Home = () => {
 	return (
 		<div className={styles.home}>
 			<IntroSection />
+			<HomeBanner />
+			<OffersSection />
 			<GuaranteePrivacy />
 			<HowItWork />
 			<OurSolutions />

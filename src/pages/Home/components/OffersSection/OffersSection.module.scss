@@ -1,0 +1,55 @@
+@import "assets/scss/vars.scss";
+
+.offers_section {
+	padding: 20px 0 100px;
+	position: relative;
+
+	.floatImg1 {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+
+	.floatImg2 {
+		position: absolute;
+		left: 0;
+		top: 0;
+		transform: translateY(-30%);
+		-webkit-transform: translateY(-30%);
+		-moz-transform: translateY(-30%);
+		-ms-transform: translateY(-30%);
+		-o-transform: translateY(-30%);
+	}
+
+	.offersSec_content {
+		position: relative;
+
+		h2 {
+			font-size: 44px;
+			font-weight: 700;
+			color: $mainColor;
+			text-align: center;
+			text-transform: capitalize;
+			margin-bottom: 8px;
+		}
+
+		p {
+			font-size: 16px;
+			font-weight: 400;
+			color: $blueTextBodyColor;
+			text-align: center;
+			letter-spacing: 2px;
+			max-width: 38%;
+			margin: 0 auto 75px;
+			line-height: 28px;
+
+			@media (max-width: 991.98px) {
+				max-width: 70%;
+			}
+
+			@media (max-width: 575.98px) {
+				max-width: 100%;
+			}
+		}
+	}
+}

@@ -39,11 +39,12 @@
 		p {
 			font-size: 16px;
 			font-weight: 400;
-			color: $bodyTextColor;
+			color: $blueTextBodyColor;
 			text-align: center;
 			letter-spacing: 2px;
 			max-width: 38%;
 			margin: 0 auto 21px;
+			line-height: 28px;
 
 			@media (max-width: 991.98px) {
 				max-width: 70%;

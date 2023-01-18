@@ -11,6 +11,10 @@
 	overflow: hidden;
 	margin-bottom: 25px;
 
+	#{$rtl} & {
+		direction: rtl;
+	}
+
 	.pro_img {
 		width: 100%;
 		height: 230px;
