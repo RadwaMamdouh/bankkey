@@ -1,3 +1,9 @@
+import { useEffect } from "react";
+
+// importing aos
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // Utils
 import { users, secure, fees } from "utils/constants/Images";
 
@@ -5,6 +11,10 @@ import { users, secure, fees } from "utils/constants/Images";
 import styles from "./GuaranteePrivacy.module.scss";
 
 const GuaranteePrivacy = () => {
+	useEffect(() => {
+		AOS.init();
+	}, []);
+
 	return (
 		<section className={styles.guarantee_privacy}>
 			<img
@@ -30,19 +40,34 @@ const GuaranteePrivacy = () => {
 							</p>
 							<img src="/img/coins.svg" alt="" className={styles.coins_img} />
 							<div className={styles.cards_holder}>
-								<div className={styles.cardBox}>
+								<div
+									className={styles.cardBox}
+									data-aos="flip-up"
+									data-aos-duration="2700"
+									data-aos-delay="400"
+								>
 									<div className={styles.icon}>
 										<img src={users} alt="" />
 									</div>
 									<div className={styles.count}>1M + Users</div>
 								</div>
-								<div className={styles.cardBox}>
+								<div
+									className={styles.cardBox}
+									data-aos="flip-up"
+									data-aos-duration="2700"
+									data-aos-delay="400"
+								>
 									<div className={styles.icon}>
 										<img src={secure} alt="" />
 									</div>
 									<div className={styles.count}>100% Secure</div>
 								</div>
-								<div className={styles.cardBox}>
+								<div
+									className={styles.cardBox}
+									data-aos="flip-up"
+									data-aos-duration="2700"
+									data-aos-delay="400"
+								>
 									<div className={styles.icon}>
 										<img src={fees} alt="" />
 									</div>

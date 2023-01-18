@@ -11,7 +11,12 @@ const OffersSlider = () => {
 	const responsiveOptions = [
 		{
 			breakpoint: "1024px",
-			numVisible: 4,
+			numVisible: 3,
+			numScroll: 1,
+		},
+		{
+			breakpoint: "992px",
+			numVisible: 2,
 			numScroll: 1,
 		},
 		{
@@ -20,7 +25,7 @@ const OffersSlider = () => {
 			numScroll: 1,
 		},
 		{
-			breakpoint: "600",
+			breakpoint: "600px",
 			numVisible: 1,
 			numScroll: 1,
 		},

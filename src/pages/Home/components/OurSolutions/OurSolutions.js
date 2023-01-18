@@ -1,3 +1,9 @@
+import { useEffect } from "react";
+
+// importing aos
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // Utils
 import { shopping, discounts, settlements } from "utils/constants/Images";
 
@@ -5,6 +11,10 @@ import { shopping, discounts, settlements } from "utils/constants/Images";
 import styles from "./OurSolutions.module.scss";
 
 const OurSolutions = () => {
+	useEffect(() => {
+		AOS.init();
+	}, []);
+
 	return (
 		<section className={styles.our_solutions}>
 			<img
@@ -17,7 +27,12 @@ const OurSolutions = () => {
 				<div className={styles.solution_cards}>
 					<div className="row">
 						<div className="col-md-6 col-lg-6 col-xl-4 mb-5 mb-xl-0">
-							<div className={styles.solution_card}>
+							<div
+								className={styles.solution_card}
+								data-aos="zoom-in"
+								data-aos-duration="3000"
+								data-aos-delay="500"
+							>
 								<div className={styles.img}>
 									<img src={shopping} alt="" />
 								</div>
@@ -29,7 +44,12 @@ const OurSolutions = () => {
 							</div>
 						</div>
 						<div className="col-md-6 col-lg-6 col-xl-4 mb-5 mb-xl-0">
-							<div className={styles.solution_card}>
+							<div
+								className={styles.solution_card}
+								data-aos="zoom-in"
+								data-aos-duration="3000"
+								data-aos-delay="500"
+							>
 								<div className={styles.img}>
 									<img src={discounts} alt="" />
 								</div>
@@ -41,7 +61,12 @@ const OurSolutions = () => {
 							</div>
 						</div>
 						<div className="col-md-6 col-lg-6 col-xl-4 mb-5 mb-xl-0">
-							<div className={styles.solution_card}>
+							<div
+								className={styles.solution_card}
+								data-aos="zoom-in"
+								data-aos-duration="3000"
+								data-aos-delay="500"
+							>
 								<div className={styles.img}>
 									<img src={settlements} alt="" />
 								</div>
