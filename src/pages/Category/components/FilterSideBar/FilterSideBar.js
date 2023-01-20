@@ -7,6 +7,8 @@ import {
 	FilterRange,
 	SearchInput,
 } from "components/Form/Inputs";
+import DarkButton from "components/UI/DarkButton/DarkButton";
+import GradientButton from "components/UI/GradientButton/GradientButton";
 
 // Child Components
 import FilterCollapse from "./components/FilterCollapse/FilterCollapse";
@@ -224,6 +226,12 @@ const FilterSideBar = () => {
 						))}
 					</FilterCollapse>
 				</div>
+			</div>
+
+			{/* Filter Actions */}
+			<div className={styles.filter_footer}>
+				<DarkButton btn type="button" label="Clear" outlined />
+				<GradientButton btn label="Apply" />
 			</div>
 		</div>
 	);
