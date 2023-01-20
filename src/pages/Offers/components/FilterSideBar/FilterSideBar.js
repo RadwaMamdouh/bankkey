@@ -1,12 +1,7 @@
 import { useState } from "react";
 
 // COMPONENTS
-import {
-	CheckBox,
-	ColorRadioBtn,
-	FilterRange,
-	SearchInput,
-} from "components/Form/Inputs";
+import { CheckBox, FilterRange, SearchInput } from "components/Form/Inputs";
 import DarkButton from "components/UI/DarkButton/DarkButton";
 import GradientButton from "components/UI/GradientButton/GradientButton";
 
@@ -67,36 +62,6 @@ const FilterSideBar = () => {
 		setSelectedCategories(_selectedCategories);
 	};
 
-	// Colors
-	const colors = [
-		{
-			name: "Red",
-			key: "red",
-		},
-		{
-			name: "Green",
-			key: "green",
-		},
-		{
-			name: "Gray",
-			key: "gray",
-		},
-		{
-			name: "Black",
-			key: "black",
-		},
-		{
-			name: "Blue",
-			key: "blue",
-		},
-		{
-			name: "White",
-			key: "white",
-		},
-	];
-
-	const [selectedColor, setSelectedColor] = useState(null);
-
 	// Devices
 	const devices = [
 		{
@@ -146,10 +111,59 @@ const FilterSideBar = () => {
 		setSelectedDevices(_selectedDevices);
 	};
 
+	// Locations
+	const locations = [
+		{
+			name: "Cairo",
+			key: "cairo",
+		},
+		{
+			name: "Giza",
+			key: "giza",
+		},
+		{
+			name: "Alexandria",
+			key: "alexandria",
+		},
+		{
+			name: "Suez",
+			key: "suez",
+		},
+		{
+			name: "Ismailia",
+			key: "ismailia",
+		},
+		{
+			name: "Port-Said",
+			key: "portSaid",
+		},
+	];
+
+	const [selectedLocations, setSelectedLocations] = useState([]);
+
+	const onLocationChange = (e) => {
+		let _selectedLocations = [...selectedLocations];
+
+		if (e.checked) {
+			_selectedLocations.push(e.value);
+		} else {
+			for (let i = 0; i < _selectedLocations.length; i++) {
+				const selectedDevices = _selectedLocations[i];
+
+				if (selectedDevices.key === e.value.key) {
+					_selectedLocations.splice(i, 1);
+					break;
+				}
+			}
+		}
+
+		setSelectedLocations(_selectedLocations);
+	};
+
 	return (
 		<div className={styles.filter_holder}>
 			<div className={styles.head}>
-				<h2>Products Filter</h2>
+				<h2>Offers Filters</h2>
 				<img src="/img/filter.svg" alt="" />
 			</div>
 			<div className={styles.filter_body}>
@@ -185,26 +199,10 @@ const FilterSideBar = () => {
 					</FilterCollapse>
 				</div>
 
-				{/* Price Filter */}
+				{/* Offer Precentage */}
 				<div className={styles.filter_box}>
-					<FilterCollapse title="Price filter">
-						<FilterRange from="50" to="500" />
-					</FilterCollapse>
-				</div>
-
-				{/* Color */}
-				<div className={styles.filter_box}>
-					<FilterCollapse title="Color">
-						{colors.map((color) => (
-							<ColorRadioBtn
-								name="colors"
-								data={color}
-								value={color}
-								handleChange={(e) => setSelectedColor(e.value)}
-								checked={selectedColor && selectedColor.key === color.key}
-								key={color.key}
-							/>
-						))}
+					<FilterCollapse title="Offer precentage">
+						<FilterRange from="10" to="100" percentage />
 					</FilterCollapse>
 				</div>
 
@@ -222,6 +220,25 @@ const FilterSideBar = () => {
 									selectedDevices.some((item) => item.key === device.key)
 								}
 								key={device.key}
+							/>
+						))}
+					</FilterCollapse>
+				</div>
+
+				{/* Filter By Location */}
+				<div className={styles.filter_box}>
+					<FilterCollapse title="Filter by location">
+						{locations.map((location) => (
+							<CheckBox
+								name="locations"
+								data={location}
+								value={location}
+								handleChange={onLocationChange}
+								checked={
+									selectedLocations &&
+									selectedLocations.some((item) => item.key === location.key)
+								}
+								key={location.key}
 							/>
 						))}
 					</FilterCollapse>

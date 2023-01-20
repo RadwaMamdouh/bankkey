@@ -4,7 +4,7 @@ import { Slider } from "primereact/slider";
 // STYLES
 import styles from "./FilterRange.module.scss";
 
-export function FilterRange() {
+export function FilterRange({ from, to, ...props }) {
 	const [value1, setValue1] = useState(50);
 
 	return (
@@ -17,13 +17,19 @@ export function FilterRange() {
 			/>
 			<div className={styles.from_to}>
 				<div className={styles.from_to_box}>
-					<div className={styles.val}>$50</div>
+					<div className={styles.val}>
+						{props.percentage ? "%" : "$"}
+						{from}
+					</div>
 					<div className={styles.txt}>From</div>
 				</div>
 				<div className={styles.filter_val}>{value1}</div>
 				<div className={styles.from_to_box}>
 					<div className={styles.txt}>to</div>
-					<div className={styles.val}>$500</div>
+					<div className={styles.val}>
+						{props.percentage ? "%" : "$"}
+						{to}
+					</div>
 				</div>
 			</div>
 		</div>

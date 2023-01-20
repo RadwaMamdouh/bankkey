@@ -11,4 +11,5 @@ export { Home } from "./Home/index";
 export { Shop } from "./Shop/index";
 export { Category } from "./Category/index";
 export { ProductDetails } from "./ProductDetails/index";
+export { Offers } from "./Offers/index";
 export { Profile } from "./Profile/index";
