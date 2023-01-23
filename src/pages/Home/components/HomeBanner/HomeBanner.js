@@ -8,7 +8,7 @@ const HomeBanner = () => {
 	return (
 		<div className={styles.home_banner}>
 			<div className="container">
-				<Bannar />
+				<Bannar></Bannar>
 			</div>
 		</div>
 	);

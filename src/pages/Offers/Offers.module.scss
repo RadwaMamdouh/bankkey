@@ -1,1 +1,121 @@
 @import "assets/scss/vars.scss";
+
+.offers {
+	[class*="Bannar_bannar"] {
+		border: 1px solid $midGrayColor;
+		background-color: $lightColor;
+		background-image: url("~/public/img/offer-bannar-ellipses.png"),
+			url("~/public/img/offer-bannar-ellipse.png");
+		background-repeat: no-repeat, no-repeat;
+		background-position: bottom left, top right 25%;
+	}
+
+	.offers_bannar {
+		padding: 0 90px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 70px;
+
+		@media (max-width: 992.98px) {
+			padding: 0 50px;
+			gap: 50px;
+		}
+
+		@media (max-width: 575.98px) {
+			flex-direction: column;
+		}
+
+		.bannar_left {
+			padding: 20px 0;
+
+			@media (max-width: 992.98px) {
+				padding: 10px 0;
+			}
+
+			h2 {
+				font-size: 43px;
+				font-weight: 700;
+				color: $mainColor;
+				line-height: 54px;
+				margin-bottom: 8px;
+				width: 100%;
+				max-width: 30%;
+
+				@media (max-width: 992.98px) {
+					font-size: 35px;
+					max-width: 100%;
+				}
+			}
+
+			p {
+				font-size: 16px;
+				font-weight: 400;
+				color: $blueColor;
+				letter-spacing: 2px;
+				line-height: 26px;
+				margin-bottom: 5px;
+				width: 100%;
+				max-width: 90%;
+
+				@media (max-width: 992.98px) {
+					font-size: 14px;
+					max-width: 100%;
+				}
+			}
+
+			img {
+				width: 100%;
+				max-width: 114px;
+			}
+		}
+
+		.bannar_right {
+			flex-shrink: 0;
+			position: relative;
+
+			img {
+				width: 100%;
+				max-width: 241px;
+			}
+
+			.offer_badge {
+				position: absolute;
+				#{$ltr} & {
+					right: 0;
+					transform: translateX(50%);
+					-webkit-transform: translateX(50%);
+					-moz-transform: translateX(50%);
+					-ms-transform: translateX(50%);
+					-o-transform: translateX(50%);
+				}
+				#{$rtl} & {
+					left: 0;
+					transform: translateX(-50%);
+					-webkit-transform: translateX(-50%);
+					-moz-transform: translateX(-50%);
+					-ms-transform: translateX(-50%);
+					-o-transform: translateX(-50%);
+				}
+				bottom: 15px;
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: $redColor;
+				border-radius: 100%;
+				-webkit-border-radius: 100%;
+				-moz-border-radius: 100%;
+				-ms-border-radius: 100%;
+				-o-border-radius: 100%;
+				width: 76px;
+				height: 73px;
+				font-size: 22px;
+				font-weight: 600;
+				color: $whiteColor;
+				line-height: 27px;
+				padding: 9px 16px;
+			}
+		}
+	}
+}

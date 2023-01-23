@@ -12,4 +12,5 @@ export { Shop } from "./Shop/index";
 export { Category } from "./Category/index";
 export { ProductDetails } from "./ProductDetails/index";
 export { Offers } from "./Offers/index";
+export { OfferDetails } from "./OfferDetails/index";
 export { Profile } from "./Profile/index";

@@ -114,7 +114,7 @@ const Category = () => {
 				<PageTitle title="Electronic Shop" />
 
 				{/* Bannar */}
-				<Bannar />
+				<Bannar></Bannar>
 
 				{/* Page Content */}
 				<div className="row">

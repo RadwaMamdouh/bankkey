@@ -10,6 +10,7 @@ import {
 	ForgetPassword,
 	Home,
 	LogIn,
+	OfferDetails,
 	Offers,
 	ProductDetails,
 	Profile,
@@ -54,6 +55,7 @@ const AllRoutes = () => (
 				element={<ProductDetails />}
 			/>
 			<Route exact strict path="/Offers" element={<Offers />} />
+			<Route exact strict path="/offer/:id" element={<OfferDetails />} />
 			<Route exact strict path="/profile" element={<Profile />} />
 		</Route>
 	</Routes>

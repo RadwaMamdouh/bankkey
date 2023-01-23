@@ -13,7 +13,7 @@ import styles from "./Offers.module.scss";
 
 const Offers = () => {
 	// Bread Crumb
-	const items = [{ label: "Home" }, { label: "Offers" }, { label: "Amazon" }];
+	const items = [{ label: "Home" }, { label: "Offers" }];
 
 	// Offer Card
 	const offerCards = [
@@ -152,7 +152,24 @@ const Offers = () => {
 				<PageTitle title="Offers Found" />
 
 				{/* Bannar */}
-				<Bannar />
+				<Bannar>
+					<div className={styles.offers_bannar}>
+						<div className={styles.bannar_left}>
+							<h2>Canon camera</h2>
+							<p>
+								It is a long established fact that a reader will be distracted
+								by the readable content.
+							</p>
+							<img src="/img/offer-bannar-logo.svg" alt="" />
+						</div>
+						<div className={styles.bannar_right}>
+							<img src="/img/offer-bannar-img.svg" alt="" />
+							<div className={styles.offer_badge}>
+								only <br /> $89
+							</div>
+						</div>
+					</div>
+				</Bannar>
 
 				{/* Page Content */}
 				<div className="row">

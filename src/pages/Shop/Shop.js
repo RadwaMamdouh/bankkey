@@ -153,7 +153,7 @@ const Shop = () => {
 				<PageTitle title="Shops" />
 
 				{/* Bannar */}
-				<Bannar />
+				<Bannar></Bannar>
 
 				{/* Search Categories */}
 				<div className={styles.categories_box}>
