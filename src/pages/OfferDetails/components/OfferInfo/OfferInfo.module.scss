@@ -1,0 +1,165 @@
+@import "assets/scss/vars.scss";
+
+.offer_info {
+	&_top {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 24px;
+		margin-bottom: 29px;
+
+		@media (max-width: 575.98px) {
+			flex-direction: column;
+		}
+
+		.offer_logo {
+			flex-shrink: 0;
+			width: 76px;
+			height: 76px;
+			border-radius: 100%;
+			-webkit-border-radius: 100%;
+			-moz-border-radius: 100%;
+			-ms-border-radius: 100%;
+			-o-border-radius: 100%;
+			overflow: hidden;
+			border: 1px solid $yellowColor;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 4px;
+
+			img {
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+
+		.right_side {
+			.pro_name {
+				font-size: 18px;
+				font-weight: 500;
+				color: $blackColor;
+				margin-bottom: 12px;
+			}
+
+			.category_date {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 12px;
+				margin-bottom: 8px;
+
+				.category_name {
+					flex-shrink: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 3px 10px;
+					background-color: $yellowColor;
+					border-radius: 50px;
+					-webkit-border-radius: 50px;
+					-moz-border-radius: 50px;
+					-ms-border-radius: 50px;
+					-o-border-radius: 50px;
+					font-size: 14px;
+					font-weight: 400;
+					color: $mainColor;
+				}
+
+				.expire_date {
+					flex-shrink: 0;
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					gap: 6px;
+
+					img {
+						flex-shrink: 0;
+						width: 100%;
+						max-width: 20px;
+					}
+
+					span {
+						font-size: 12px;
+						font-weight: 500;
+						color: $redColor;
+					}
+				}
+			}
+
+			.pro_desc {
+				font-size: 14px;
+				font-weight: 400;
+				color: $blueTextBodyColor;
+				line-height: 24px;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.merchant_details {
+	:global {
+		.p-tabview {
+			&-nav {
+				background-color: transparent !important;
+				border-color: $SecondaryLightGrayColor;
+
+				.p-unselectable-text {
+					.p-tabview-nav-link {
+						padding: 12px 14px;
+						background-color: transparent;
+						border: 0 !important;
+						font-size: 14px;
+						font-weight: 400;
+						color: $mainDarkColor;
+
+						&:focus {
+							box-shadow: none !important;
+						}
+					}
+
+					&:hover {
+						.p-tabview-nav-link {
+							background-color: transparent !important;
+							color: $mainDarkColor !important;
+						}
+					}
+
+					&.p-highlight {
+						.p-tabview-nav-link {
+							background-color: $SecondaryLightGrayColor;
+							color: $mainDarkColor;
+							font-weight: 700;
+						}
+
+						&:hover {
+							.p-tabview-nav-link {
+								background-color: $SecondaryLightGrayColor !important;
+								color: $mainDarkColor !important;
+							}
+						}
+					}
+				}
+
+				.p-tabview-ink-bar {
+					height: 2px;
+					background-color: $blueTextBodyColor;
+				}
+			}
+
+			&-panels {
+				background-color: transparent !important;
+				padding: 0;
+			}
+		}
+	}
+
+	.details_body {
+		padding: 24px 0;
+	}
+
+	.merchant_body {
+		padding: 16px 0;
+	}
+}

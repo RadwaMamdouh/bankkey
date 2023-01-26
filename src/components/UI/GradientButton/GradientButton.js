@@ -12,6 +12,7 @@ const GradientButton = ({ ...props }) => {
 					type={props.type}
 					label={props.label}
 					className={styles.gradient_btn}
+					onClick={props.buttonClicked}
 				>
 					{props.withIcon && <img src={props.icon} alt="" />}
 				</Button>

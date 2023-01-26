@@ -8,6 +8,10 @@
 		position: absolute;
 		right: 0;
 		bottom: 0;
+
+		@media (max-width: 575.98px) {
+			max-width: 50%;
+		}
 	}
 
 	.floatImg2 {
@@ -19,6 +23,15 @@
 		-moz-transform: translateY(-30%);
 		-ms-transform: translateY(-30%);
 		-o-transform: translateY(-30%);
+
+		@media (max-width: 575.98px) {
+			max-width: 50%;
+			transform: none;
+			-webkit-transform: none;
+			-moz-transform: none;
+			-ms-transform: none;
+			-o-transform: none;
+		}
 	}
 
 	.offersSec_content {

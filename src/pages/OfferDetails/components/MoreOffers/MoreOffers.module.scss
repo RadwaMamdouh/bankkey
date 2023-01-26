@@ -1,0 +1,111 @@
+@import "assets/scss/vars.scss";
+
+.more_offers {
+	position: relative;
+
+	.floatImg1 {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+		@media (max-width: 575.98px) {
+			max-width: 50%;
+		}
+	}
+
+	.floatImg2 {
+		position: absolute;
+		left: 0;
+		top: 0;
+		transform: translateY(-30%);
+		-webkit-transform: translateY(-30%);
+		-moz-transform: translateY(-30%);
+		-ms-transform: translateY(-30%);
+		-o-transform: translateY(-30%);
+
+		@media (max-width: 575.98px) {
+			max-width: 50%;
+			transform: none;
+			-webkit-transform: none;
+			-moz-transform: none;
+			-ms-transform: none;
+			-o-transform: none;
+		}
+	}
+
+	&_slider {
+		position: relative;
+	}
+
+	&_title {
+		font-size: 44px;
+		font-weight: 700;
+		color: $mainColor;
+		text-align: center;
+		text-transform: capitalize;
+		margin-bottom: 8px;
+	}
+
+	&_desc {
+		font-size: 16px;
+		font-weight: 400;
+		color: $blueTextBodyColor;
+		text-align: center;
+		letter-spacing: 2px;
+		line-height: 28px;
+		max-width: 35%;
+		margin: 0 auto 32px;
+
+		@media (max-width: 992.98px) {
+			max-width: 70%;
+		}
+
+		@media (max-width: 575.98px) {
+			max-width: 100%;
+		}
+	}
+
+	.offer_slider {
+		:global {
+			.p-carousel {
+				direction: ltr;
+			}
+
+			.p-carousel-prev,
+			.p-carousel-next {
+				&:not(.p-disabled) {
+					color: $mainDarkColor;
+				}
+			}
+
+			.p-carousel-indicator {
+				margin-right: 4px !important;
+				margin-bottom: 4px !important;
+
+				.p-link {
+					width: 12px !important;
+					height: 8px !important;
+					background-color: $whiteColor !important;
+					border: 1px solid #dce0e6 !important;
+					box-shadow: 0px 0px 4px rgba(67, 185, 51, 0.16) !important;
+					border-radius: 12px !important;
+					-webkit-border-radius: 12px !important;
+					-moz-border-radius: 12px !important;
+					-ms-border-radius: 12px !important;
+					-o-border-radius: 12px !important;
+					transition: 0.3s;
+					-webkit-transition: 0.3s;
+					-moz-transition: 0.3s;
+					-ms-transition: 0.3s;
+					-o-transition: 0.3s;
+				}
+
+				&.p-highlight {
+					.p-link {
+						background-color: $mainColor !important;
+					}
+				}
+			}
+		}
+	}
+}

@@ -12,6 +12,7 @@ const GrayButton = ({ ...props }) => {
 					type={props.type}
 					label={props.label}
 					className={styles.gray_btn}
+					onClick={props.buttonClicked}
 				>
 					{props.withIcon && <img src={props.icon} alt="" />}
 				</Button>

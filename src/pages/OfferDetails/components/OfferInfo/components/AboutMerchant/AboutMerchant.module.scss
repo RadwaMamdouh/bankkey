@@ -1,0 +1,90 @@
+@import "assets/scss/vars.scss";
+
+.about_merchant {
+	.tit {
+		font-size: 16px;
+		font-weight: 400;
+		color: $blackMedColor;
+		margin-bottom: 10px;
+		line-height: 20px;
+	}
+
+	.about_sec {
+		margin-bottom: 24px;
+
+		.about_txt {
+			font-size: 14px;
+			font-weight: 400;
+			color: $blueTextBodyColor;
+			letter-spacing: 2px;
+			margin-bottom: 0;
+			line-height: 24px;
+		}
+	}
+
+	.stores_sec {
+		.stores {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 16px;
+			flex-wrap: wrap;
+
+			.store_box {
+				flex-shrink: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 10px;
+				background-color: $whiteColor;
+				border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				-ms-border-radius: 10px;
+				-o-border-radius: 10px;
+				box-shadow: 0px 6px 16px rgba(22, 25, 102, 0.08);
+				padding: 8px 16px;
+				transition: 0.3s;
+				-webkit-transition: 0.3s;
+				-moz-transition: 0.3s;
+				-ms-transition: 0.3s;
+				-o-transition: 0.3s;
+
+				i {
+					flex-shrink: 0;
+					font-size: 18px;
+					color: $mainColor;
+					transition: 0.3s;
+					-webkit-transition: 0.3s;
+					-moz-transition: 0.3s;
+					-ms-transition: 0.3s;
+					-o-transition: 0.3s;
+				}
+
+				span {
+					font-size: 12px;
+					font-weight: 400;
+					color: $bodyTextColor;
+					transition: 0.3s;
+					-webkit-transition: 0.3s;
+					-moz-transition: 0.3s;
+					-ms-transition: 0.3s;
+					-o-transition: 0.3s;
+					white-space: nowrap;
+				}
+
+				&:hover {
+					background-color: $mainDarkBlueColor;
+
+					i {
+						color: $SecondaryLightGrayColor;
+					}
+
+					span {
+						color: $whiteColor;
+					}
+				}
+			}
+		}
+	}
+}

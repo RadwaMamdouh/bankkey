@@ -1,0 +1,112 @@
+@import "assets/scss/vars.scss";
+
+.offer_details {
+	.details_list {
+		margin-bottom: 24px;
+		list-style: disc;
+		padding-inline-start: 16px;
+
+		li {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+
+			font-size: 14px;
+			font-weight: 400;
+			color: $blueTextBodyColor;
+			line-height: 24px;
+			letter-spacing: 2px;
+		}
+	}
+
+	.details_box {
+		.box_title {
+			font-size: 16px;
+			font-weight: 400;
+			color: $blackMedColor;
+			text-transform: capitalize;
+			margin-bottom: 20px;
+		}
+
+		.price {
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-start;
+			gap: 5px;
+
+			.after_discount {
+				font-size: 28px;
+				font-weight: 700;
+				color: $mainColor;
+				line-height: 35px;
+			}
+
+			.original_price {
+				font-size: 18px;
+				font-weight: 400;
+				color: $grayLightColor;
+				line-height: 22px;
+				text-decoration: line-through;
+			}
+		}
+
+		.discount_box {
+			padding: 6px 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: -moz-fit-content;
+			width: fit-content;
+			background-color: $SecondaryLightGrayColor;
+			border-radius: 9px;
+			-webkit-border-radius: 9px;
+			-moz-border-radius: 9px;
+			-ms-border-radius: 9px;
+			-o-border-radius: 9px;
+			font-size: 20px;
+			font-weight: 500;
+			color: $mainDarkColor;
+		}
+	}
+
+	[class*="gradient_btn"] {
+		img {
+			transition: 0.3s;
+			-webkit-transition: 0.3s;
+			-moz-transition: 0.3s;
+			-ms-transition: 0.3s;
+			-o-transition: 0.3s;
+
+			#{$rtl} & {
+				transform: rotate(180deg);
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+			}
+		}
+	}
+
+	.copy_holder {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		height: 60px;
+
+		.code_box {
+			width: 100%;
+			background-color: $lightGoldColor;
+			height: 100%;
+			padding: 20px 30px;
+			border-start-start-radius: 8px;
+			border-end-start-radius: 8px;
+			border: 1px dashed $mainColor;
+			border-inline-end: 0;
+		}
+
+		[class*="gradient_btn"] {
+			height: 100%;
+			width: 173px;
+		}
+	}
+}
