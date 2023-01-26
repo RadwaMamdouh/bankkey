@@ -1,12 +1,23 @@
+import { useEffect } from "react";
+
 import { Carousel } from "primereact/carousel";
 
+// importing aos
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // COMPONENTS
+import OfferSlider from "components/UI/OfferSlider/OfferSlider";
 import OfferCard from "components/UI/OfferCard/OfferCard";
 
 // STYLES
-import styles from "./OffersSlider.module.scss";
+// import styles from "./OffersSlider.module.scss";
 
 const OffersSlider = () => {
+	useEffect(() => {
+		AOS.init();
+	}, []);
+
 	// Responsive Carousel Options
 	const responsiveOptions = [
 		{
@@ -107,15 +118,17 @@ const OffersSlider = () => {
 	};
 
 	return (
-		<div className={styles.offer_slider}>
-			<Carousel
-				value={offerCard}
-				numVisible={4}
-				numScroll={1}
-				responsiveOptions={responsiveOptions}
-				itemTemplate={offerTemplate}
-				showNavigators={false}
-			/>
+		<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+			<OfferSlider>
+				<Carousel
+					value={offerCard}
+					numVisible={4}
+					numScroll={1}
+					responsiveOptions={responsiveOptions}
+					itemTemplate={offerTemplate}
+					showNavigators={false}
+				/>
+			</OfferSlider>
 		</div>
 	);
 };

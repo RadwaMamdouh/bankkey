@@ -1,6 +1,7 @@
 import { Carousel } from "primereact/carousel";
 
 // COMPONENTS
+import OfferSlider from "components/UI/OfferSlider/OfferSlider";
 import OfferCard from "components/UI/OfferCard/OfferCard";
 
 // STYLES
@@ -130,7 +131,7 @@ const MoreOffers = () => {
 					</p>
 
 					{/* Offers Slider */}
-					<div className={styles.offer_slider}>
+					<OfferSlider>
 						<Carousel
 							value={offerCard}
 							numVisible={4}
@@ -139,7 +140,7 @@ const MoreOffers = () => {
 							itemTemplate={offerTemplate}
 							showNavigators={false}
 						/>
-					</div>
+					</OfferSlider>
 				</div>
 			</div>
 		</div>

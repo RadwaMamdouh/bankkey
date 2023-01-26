@@ -1,9 +1,3 @@
-import { useEffect } from "react";
-
-// importing aos
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 // COMPONENTS
 import { Link } from "react-router-dom";
 import GradientButton from "../GradientButton/GradientButton";
@@ -12,17 +6,8 @@ import GradientButton from "../GradientButton/GradientButton";
 import styles from "./OfferCard.module.scss";
 
 const OfferCard = ({ offer }) => {
-	useEffect(() => {
-		AOS.init();
-	}, []);
-
 	return (
-		<div
-			className={styles.offer_card}
-			data-aos="fade-up"
-			data-aos-duration="1000"
-			data-aos-delay="300"
-		>
+		<div className={styles.offer_card}>
 			<div className={styles.offer_img}>
 				<img src={`/img/${offer.image}`} alt="" />
 				{offer.bestOffer && (
