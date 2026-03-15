@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "assets/scss/vars.scss";
 
 .filter_key {
@@ -41,47 +40,3 @@
 		}
 	}
 }
-=======
-@import "assets/scss/vars.scss";
-
-.filter_key {
-	background: rgba($mainColor, 0.1);
-	border-radius: 25px;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	-ms-border-radius: 25px;
-	-o-border-radius: 25px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: -moz-fit-content;
-	width: fit-content;
-	padding: 4px 12px;
-	gap: 6px;
-	flex-shrink: 0;
-
-	.txt {
-		font-size: 12px;
-		font-weight: 700;
-		color: $mainColor;
-	}
-
-	.removeBtn {
-		flex-shrink: 0;
-		padding: 2px !important;
-		height: 12px !important;
-		width: 12px !important;
-		box-shadow: none !important;
-		color: $mainColor !important;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 0;
-
-		img {
-			width: 12px;
-			height: 12px;
-		}
-	}
-}
->>>>>>> bank key pages

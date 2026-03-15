@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "assets/scss/vars.scss";
 
 .bannar {
@@ -13,25 +12,3 @@
 	overflow: hidden;
 	margin-bottom: 32px;
 }
-=======
-@import "assets/scss/vars.scss";
-
-.bannar {
-	width: 100%;
-	height: 261px;
-	background: rgba($mainColor, 0.1);
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-ms-border-radius: 8px;
-	-o-border-radius: 8px;
-	overflow: hidden;
-	margin-bottom: 32px;
-
-	img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-}
->>>>>>> bank key pages

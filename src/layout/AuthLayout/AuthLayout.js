@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Outlet } from "react-router-dom";
 
 // STYLES
@@ -13,19 +12,3 @@ const AuthLayout = () => {
 };
 
 export default AuthLayout;
-=======
-import { Outlet } from "react-router-dom";
-
-// STYLES
-import styles from "./AuthLayout.module.scss";
-
-const AuthLayout = () => {
-	return (
-		<div className={styles.auth_layout}>
-			<Outlet />
-		</div>
-	);
-};
-
-export default AuthLayout;
->>>>>>> bank key pages

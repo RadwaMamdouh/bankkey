@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "assets/scss/vars.scss";
 
 .shop {
@@ -32,38 +31,3 @@
 .categories {
 	margin-bottom: 72px;
 }
-=======
-@import "assets/scss/vars.scss";
-
-.shop {
-	padding: 10px 0 104px;
-}
-
-.categories_box {
-	background-color: $whiteColor;
-	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-ms-border-radius: 8px;
-	-o-border-radius: 8px;
-	padding: 24px 30px;
-	margin-bottom: 32px;
-
-	.srch_holder {
-		margin-bottom: 24px;
-	}
-
-	.filter_words {
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		gap: 18px;
-		flex-wrap: wrap;
-	}
-}
-
-.categories {
-	margin-bottom: 72px;
-}
->>>>>>> bank key pages

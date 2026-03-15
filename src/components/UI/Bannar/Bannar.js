@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // STYLES
 import styles from "./Bannar.module.scss";
 
@@ -7,17 +6,3 @@ const Bannar = ({ children }) => {
 };
 
 export default Bannar;
-=======
-// STYLES
-import styles from "./Bannar.module.scss";
-
-const Bannar = ({ img }) => {
-	return (
-		<div className={styles.bannar}>
-			{/* <img src={`/img/${img}`} alt="" /> */}
-		</div>
-	);
-};
-
-export default Bannar;
->>>>>>> bank key pages
