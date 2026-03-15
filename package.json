@@ -42,6 +42,7 @@
 		]
 	},
 	"devDependencies": {
+		"@babel/core": "^7.20.12",
 		"sass": "^1.98.0"
 	}
 }
